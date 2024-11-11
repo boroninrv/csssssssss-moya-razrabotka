@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <style>
+        
+        img {
+        display: block; 
+        margin: 0 auto; 
+      }
+      </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+           
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 300px;
+          
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Регистрация</h2>
+<form id="registrationForm">
+    <label for="username">Имя пользователя:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="email">Электронная почта:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="password">Пароль:</label>
+    <input type="password" id="password" name="password" required>
+
+    <button type="submit">Зарегистрироваться</button>
+</form>
+
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        window.location.href = 'welcome.html';
+    });
+
+
+</script>
+</body>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: #444;
+    padding: 10px;
+    list-style: none;
+    position: relative;
+}
+
+.nav > li {
+    display: inline-block;
+    position: relative;
+}
+
+.nav > li > a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav > li > a:hover {
+    background-color: #555; 
+}
+
+      .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown li {
+    width: 200px;
+}
+
+.dropdown li a {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown li a:hover {
+    background-color: #444; 
+}
+
+
+.nav > li:hover .dropdown {
+    display: block;
+}
+
+
+@media (max-width: 600px) {
+    .nav {
+        text-align: center;
+    }
+    
+    .nav > li {
+        display: block; 
+        width: 100%;
+    }
+    
+    .dropdown {
+        position: static; 
+        width: 100%; 
+    }
+}
+</style>
+</head>
+<body>
+
+<ul class="nav">
+<li><a href="#">Главная</a></li>
+<li>
+<a href="#">Услуги</a>
+<ul class="dropdown">
+    <li><a href="#">Дипломные работы</a></li>
+    <li><a href="#">Курсовые работы</a></li>
+    <li>
+        <a href="#">Дополнительные услуги</a>
+        <ul class="dropdown">
+            <li><a href="#">Практические работы</a></li>
+            <li><a href="#">Домашние работы</a></li>
+        </ul>
+    </li>
+</ul>
+</li>
+<li><a href="#">О нас</a></li>
+<li><a href="#">Контакты</a></li>
+</ul>
+<img src="hRnCoEp1AMw.jpg" alt="Извините, но здесь должна быть картинка." width="800"
+height="600">
+</body>
+</html>
+
